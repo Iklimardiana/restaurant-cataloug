@@ -5,7 +5,7 @@ class Appbar extends HTMLElement {
         this.render();
     }
 
-    render(){
+    render() {
         this.innerHTML = `
         <div class="navbar">
             <div class="logo">
@@ -27,5 +27,5 @@ class Appbar extends HTMLElement {
         `;
     }
 }
-  
+
 customElements.define('app-bar', Appbar);

@@ -1,5 +1,5 @@
-class Drawer extends HTMLElement{
-    connectedCallback(){
+class Drawer extends HTMLElement {
+    connectedCallback() {
         this.render();
     }
 
@@ -7,14 +7,14 @@ class Drawer extends HTMLElement{
         event.stopPropagation();
         drawer.classList.toggle('open');
     }
-    
+
     _closeDrawer(event, drawer) {
         event.stopPropagation();
         drawer.classList.remove('open');
     }
 
-    render(){
-        this.innerHTML =`
+    render() {
+        this.innerHTML = `
         <div class="drawer">
             <p>MedianaFood</p>
             <ul class=drawer-list>
